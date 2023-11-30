@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.19.63",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:zombie",
@@ -112,8 +112,12 @@
         "minecraft:equipment": {
           "table": "loot_tables/entities/zombie_equipment.json"
         }
-      } 
-    },
+      },
+      "minecraft:can_break_doors": {
+        "minecraft:annotation.break_door": {
+        }
+      }
+    }, 
 
     "components": {
       "minecraft:is_hidden_when_invisible": {

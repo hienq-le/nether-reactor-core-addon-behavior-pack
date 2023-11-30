@@ -1,5 +1,5 @@
 {
-  "format_version": "1.17.20",
+  "format_version": "1.19.63",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:drowned",
@@ -70,6 +70,18 @@
         }
       },
 
+      "minecraft:ranged_equipment": {
+        "minecraft:equipment": {
+          "table": "loot_tables/entities/drowned_ranged_equipment.json",
+          "slot_drop_chance": [
+            {
+              "slot": "slot.weapon.offhand",
+              "drop_chance": 1.0
+            }
+          ]
+        }
+      },
+
       "minecraft:melee_mode": {
         "minecraft:attack": [
           {
@@ -104,6 +116,8 @@
           "track_target": false,
           "require_complete_path": true
         },
+
+      "minecraft:melee_equipment": {
         "minecraft:equipment": {
           "table": "loot_tables/entities/drowned_equipment.json",
           "slot_drop_chance": [
@@ -134,6 +148,11 @@
           "can_swim": false,
           "can_walk": true,
           "avoid_sun": true
+        }
+      },
+
+      "minecraft:can_break_doors": {
+        "minecraft:annotation.break_door": {
         }
       }
     },
@@ -543,43 +562,63 @@
 
     "events": {
       "minecraft:entity_spawned": {
-        "randomize": [
+        "sequence": [
           {
-            "weight": 15,
-            "remove": {
-            },
-            "add": {
-              "component_groups": [
-                "minecraft:mode_switcher",
-                "minecraft:ranged_mode",
-                "minecraft:adult_drowned"
-              ]
-            }
-          },
-          {
-            "weight": 85,
             "randomize": [
               {
-                "weight": 95,
+                "weight": 15,
                 "remove": {
                 },
                 "add": {
                   "component_groups": [
-                    "minecraft:melee_mode",
+                    "minecraft:mode_switcher",
+                    "minecraft:ranged_equipment",
+                    "minecraft:ranged_mode",
                     "minecraft:adult_drowned"
                   ]
                 }
               },
               {
-                "weight": 5,
-                "remove": {
-                },
+                "weight": 85,
+                "randomize": [
+                  {
+                    "weight": 95,
+                    "remove": {
+                    },
+                    "add": {
+                      "component_groups": [
+                        "minecraft:melee_equipment",
+                        "minecraft:melee_mode",
+                        "minecraft:adult_drowned"
+                      ]
+                    }
+                  },
+                  {
+                    "weight": 5,
+                    "remove": {
+                    },
+                    "add": {
+                      "component_groups": [
+                        "minecraft:melee_equipment",
+                        "minecraft:melee_mode",
+                        "minecraft:baby_drowned"
+                      ]
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "randomize": [
+              {
+                "weight": 10,
                 "add": {
-                  "component_groups": [
-                    "minecraft:melee_mode",
-                    "minecraft:baby_drowned"
-                  ]
+                  "component_groups": [ "minecraft:can_break_doors" ]
                 }
+              },
+              {
+                "weight": 90
               }
             ]
           }
@@ -588,6 +627,7 @@
       "minecraft:as_baby": {
         "add": {
           "component_groups": [
+            "minecraft:melee_equipment",
             "minecraft:melee_mode",
             "minecraft:baby_drowned"
           ]
@@ -596,6 +636,7 @@
       "minecraft:as_adult": {
         "add": {
           "component_groups": [
+            "minecraft:melee_equipment",
             "minecraft:melee_mode",
             "minecraft:adult_drowned"
           ]
