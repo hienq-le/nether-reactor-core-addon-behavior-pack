@@ -99,7 +99,7 @@
 			{
 				"test": "inactivity_timer",
 				"subject": "self",
-				"operator: ">=",
+				"operator": ">=",
 				"value": 120
 			}
 		] }
