@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.19.0",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:spider",
@@ -297,7 +297,7 @@
          "filters": { "test": "is_difficulty", "value": "hard" },
          "trigger": "minecraft:spawn_spider_with_effects"
         },
-// End of MCPE-94878 Fix
+// End of MCPE-10240 Fix
         {
         "randomize": [
           {
