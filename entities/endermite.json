@@ -127,16 +127,6 @@
                   "test": "is_family",
                   "subject": "other",
                   "value": "player"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "enderman"
-                },
-                {
-                  "test": "is_family",
-                  "subject": "other",
-                  "value": "iron_golem"
                 }
               ]
             },
