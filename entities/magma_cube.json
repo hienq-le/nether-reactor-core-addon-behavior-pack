@@ -1,5 +1,5 @@
 {
-  "format_version": "1.16.0",
+  "format_version": "1.19.63",
   "minecraft:entity": {
     "description": {
       "identifier": "minecraft:magma_cube",
@@ -47,6 +47,18 @@
 		"damage": 9
 	  }
         ],
+        "minecraft:area_attack" : {
+          "damage_range": 0.15,
+          "damage_per_tick": 6,
+          "damage_cooldown" : 0.5,
+          "cause": "entity_attack",
+          "entity_filter": {
+            "any_of": [
+              { "test": "is_family", "subject": "other", "value": "player" },
+              { "test": "is_family", "subject": "other", "value": "iron_golem" }
+            ]
+          }
+        },
         "minecraft:loot": {
           "table": "loot_tables/entities/magma_cube.json"
         }
@@ -90,6 +102,18 @@
 		"damage": 6
 	  }
         ],
+        "minecraft:area_attack" : {
+          "damage_range": 0.15,
+          "damage_per_tick": 4,
+          "damage_cooldown" : 0.5,
+          "cause": "entity_attack",
+          "entity_filter": {
+            "any_of": [
+              { "test": "is_family", "subject": "other", "value": "player" },
+              { "test": "is_family", "subject": "other", "value": "iron_golem" }
+            ]
+          }
+        },
         "minecraft:loot": {
           "table": "loot_tables/entities/magma_cube.json"
         }
@@ -132,7 +156,19 @@
 		},
 		"damage": 4.5
 	  }
-        ]
+        ],
+        "minecraft:area_attack" : {
+          "damage_range": 0.15,
+          "damage_per_tick": 3,
+          "damage_cooldown" : 0.5,
+          "cause": "entity_attack",
+          "entity_filter": {
+            "any_of": [
+              { "test": "is_family", "subject": "other", "value": "player" },
+              { "test": "is_family", "subject": "other", "value": "iron_golem" }
+            ]
+          }
+        }
       },
 
       "minecraft:slime_calm": {
@@ -251,8 +287,41 @@
 
     "events": {
       "minecraft:entity_spawned": {
+        "randomize": [
+          {
+            "weight": 1,
+            "trigger": "spawn_small"
+          },
+          {
+            "weight": 1,
+            "trigger": "spawn_medium"
+          },
+          {
+            "weight": 1,
+            "trigger": "spawn_large"
+          }
+        ]
+      },
+      "spawn_small": {
         "add": {
           "component_groups": [
+            "minecraft:slime_small",
+            "minecraft:slime_calm"
+          ]
+        }
+      },
+      "spawn_medium": {
+        "add": {
+          "component_groups": [
+            "minecraft:slime_medium",
+            "minecraft:slime_calm"
+          ]
+        }
+      },
+      "spawn_large": {
+        "add": {
+          "component_groups": [
+            "minecraft:slime_large",
             "minecraft:slime_calm"
           ]
         }
