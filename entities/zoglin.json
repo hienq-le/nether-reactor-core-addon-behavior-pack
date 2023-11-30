@@ -182,7 +182,7 @@
         "within_radius": 16.0,
         "entity_types": [
           {
-		"filters: {
+		"filters": {
 			"all_of": [
 					{
 					"test": "is_family",
