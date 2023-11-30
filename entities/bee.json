@@ -71,7 +71,8 @@
                         "minecraft:flowering_azalea", //Flowering Azalea
                         "minecraft:azalea_leaves_flowered", //Flowering Azalea leaves
 		    	"minecraft:mangrove_propagule", // Mangrove Propagule
-                        "minecraft:pink_petals" // Pink Petals
+                        "minecraft:pink_petals", // Pink Petals
+                        "minecraft:cherry_leaves"  // Cherry Leaves
                     ]
                 }
             },
