@@ -1,5 +1,5 @@
 {
-    "format_version": "1.19.70",
+    "format_version": "1.20.0",
     "minecraft:entity": {
         "description": {
             "identifier": "minecraft:bee",
@@ -27,6 +27,8 @@
                         "minecraft:flowering_azalea", //Flowering Azalea
                         "minecraft:azalea_leaves_flowered", //Flowering Azalea leaves
                         "minecraft:mangrove_propagule", // Mangrove Propagule
+                        "minecraft:pitcher_plant",
+                        "minecraft:torchflower",
                         "minecraft:pink_petals", // Pink Petals
                         "minecraft:cherry_leaves"  // Cherry Leaves
                     ],
@@ -71,6 +73,8 @@
                         "minecraft:flowering_azalea", //Flowering Azalea
                         "minecraft:azalea_leaves_flowered", //Flowering Azalea leaves
 		    	"minecraft:mangrove_propagule", // Mangrove Propagule
+                        "minecraft:pitcher_plant",
+                        "minecraft:torchflower",
                         "minecraft:pink_petals", // Pink Petals
                         "minecraft:cherry_leaves"  // Cherry Leaves
                     ]
@@ -201,6 +205,8 @@
                         "minecraft:flowering_azalea", //Flowering azalea
                         "minecraft:azalea_leaves_flowered", //Flowering Azalea leaves
 		    	"minecraft:mangrove_propagule", // Mangrove Propagule
+                        "minecraft:pitcher_plant",
+                        "minecraft:torchflower",
                         "minecraft:pink_petals", // Pink Petals
                         "minecraft:cherry_leaves"  // Cherry Leaves
                     ],
@@ -408,6 +414,8 @@
 			"minecraft:chorus_flower",
                     "minecraft:flowering_azalea", //Flowering azalea
                     "minecraft:azalea_leaves_flowered", //Flowering Azalea leaves
+                        "minecraft:pitcher_plant",
+                        "minecraft:torchflower",
 		    	"minecraft:mangrove_propagule", // Mangrove Propagule
                         "minecraft:pink_petals", // Pink Petals
                         "minecraft:cherry_leaves"  // Cherry Leaves
