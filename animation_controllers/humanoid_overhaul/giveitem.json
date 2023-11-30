@@ -1,0 +1,47 @@
+{
+    "format_version": "1.10.0",
+    "animation_controllers": {
+        "controller.animation.janitor.dafault": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "d": "query.is_sheared"
+                        }
+                    ]
+                },
+                "d": {
+                    "transitions": [
+                        {
+                            "default": "!query.is_sheared"
+                        }
+                    ],
+                    "on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 lc:item_broom"
+                    ]
+                }
+            }
+        },
+        "controller.animation.scientist.dafault": {
+            "states": {
+                "default": {
+                    "transitions": [
+                        {
+                            "d": "query.is_sheared"
+                        }
+                    ]
+                },
+                "d": {
+                    "transitions": [
+                        {
+                            "default": "!query.is_sheared"
+                        }
+                    ],
+                    "on_entry": [
+						"/replaceitem entity @s slot.weapon.mainhand 0 lc:item_blank_document"
+                    ]
+                }
+            }
+        }
+    }
+}

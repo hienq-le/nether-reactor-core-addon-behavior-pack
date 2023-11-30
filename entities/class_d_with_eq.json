@@ -1,0 +1,110 @@
+{
+    "format_version": "1.18.0",
+    "minecraft:entity": {
+        "description": {
+            "identifier": "minecraft:class_d_with_eq",
+            "is_spawnable": true,
+            "is_summonable": true,
+            "is_experimental": false
+        },
+        "component_groups": {
+            "alive": {
+				"minecraft:is_sheared": {}
+			},
+			"classd_m": {
+                "minecraft:transformation": {
+                    "into": "minecraft:class_d<classd:with_eq>"
+                }
+            },
+			"classd_f": {
+                "minecraft:transformation": {
+                    "into": "minecraft:class_d_female<classd:with_eq>"
+                }
+            }
+        },
+        "components": {
+            "minecraft:type_family": {
+                "family": ["inanimate"]
+            },
+            "minecraft:collision_box": {
+                "width": 0.25,
+                "height": 0.5
+            },
+            "minecraft:interact": {
+                "interactions": [{
+                        "on_interact": {
+                            "filters": {
+                                "all_of": [{
+                                        "test": "is_family",
+                                        "subject": "other",
+                                        "value": "player"
+                                    }, {
+                                        "test": "has_equipment",
+                                        "subject": "other",
+                                        "domain": "hand",
+                                        "value": "barrier"
+                                    }
+                                ]
+                            },
+                            "event": "kill",
+                            "target": "self"
+                        },
+						"use_item": true,
+						"interact_text": "Remove",
+						"play_sounds": "",
+						"swing": true
+                    }
+                ]
+            },
+            "minecraft:health": {
+                "value": 1
+            },
+            "minecraft:damage_sensor": {
+                "triggers": {
+                    "cause": "all",
+                    "deals_damage": false
+                }
+            },
+            "minecraft:physics": {
+                "has_gravity": false
+            }
+        },
+        "events": {
+            "minecraft:event_death": {
+                "add": {
+                    "component_groups": [
+                        "alive"
+                    ]
+                }
+            },
+			"kill": {
+				"remove": {},
+				"add": {
+					"component_groups": [
+						"death"
+					]
+				}
+            },
+            "minecraft:entity_spawned": {
+                "sequence": [
+                  {
+                    "randomize": [
+                      {
+                        "weight": 160,
+                        "add": {
+                          "component_groups": [ "classd_m" ]
+                        }
+                      },
+                      {
+                        "weight": 160,
+                        "add": {
+                          "component_groups": [ "classd_f" ]
+                        }
+                      }
+                    ]
+                  }
+                ]
+            }
+        }
+    }
+}
