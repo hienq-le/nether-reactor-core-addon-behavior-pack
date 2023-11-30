@@ -23,6 +23,7 @@
                         "minecraft:double_plant:1", // Lilac
                         "minecraft:double_plant:4", // Rose Bush
                         "minecraft:double_plant:5",  // Peony
+			"minecraft:chorus_flower",
                         "minecraft:flowering_azalea", //Flowering Azalea
                         "minecraft:azalea_leaves_flowered", //Flowering Azalea leaves
                         "minecraft:mangrove_propagule", // Mangrove Propagule
@@ -66,6 +67,7 @@
                         "minecraft:double_plant:1", // Lilac
                         "minecraft:double_plant:4", // Rose Bush
                         "minecraft:double_plant:5",  // Peony
+			"minecraft:chorus_flower",
                         "minecraft:flowering_azalea", //Flowering Azalea
                         "minecraft:azalea_leaves_flowered", //Flowering Azalea leaves
 		    	"minecraft:mangrove_propagule", // Mangrove Propagule
@@ -194,6 +196,7 @@
                         "minecraft:double_plant:9", // Lilac top
                         "minecraft:double_plant:12", // Rose Bush top
                         "minecraft:double_plant:13",  // Peony top
+			"minecraft:chorus_flower",
                         "minecraft:flowering_azalea", //Flowering azalea
                         "minecraft:azalea_leaves_flowered", //Flowering Azalea leaves
 		    	"minecraft:mangrove_propagule", // Mangrove Propagule
@@ -401,6 +404,7 @@
                     "minecraft:double_plant:1", // Lilac
                     "minecraft:double_plant:4", // Rose Bush
                     "minecraft:double_plant:5",  // Peony
+			"minecraft:chorus_flower",
                     "minecraft:flowering_azalea", //Flowering azalea
                     "minecraft:azalea_leaves_flowered", //Flowering Azalea leaves
 		    	"minecraft:mangrove_propagule", // Mangrove Propagule
