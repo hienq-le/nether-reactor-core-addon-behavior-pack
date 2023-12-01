@@ -21,17 +21,17 @@
           "into": "minecraft:zombie"
         }
       },
-      "minecraft:base_nurse1": {
+      "mod12:base_nurse1": {
         "minecraft:variant": {
           "value": 0
         }
       },
-      "minecraft:base_nurse2": {
+      "mod12:base_nurse2": {
         "minecraft:variant": {
           "value": 1
         }
       },
-      "minecraft:base_nurse3": {
+      "mod12:base_nurse3": {
         "minecraft:variant": {
           "value": 2
         }
@@ -46,9 +46,6 @@
         "entity_filter": {
           "any_of": [
             { "test": "is_family", "subject": "other", "value": "player" },
-            { "test": "is_family", "subject": "other", "value": "scpfoundation" },
-            { "test": "is_family", "subject": "other", "value": "guard" },
-            { "test": "is_family", "subject": "other", "value": "mtf" },
             { "test": "is_family", "subject": "other", "value": "villager" },
             { "test": "is_family", "subject": "other", "value": "iron_golem" },
             { "test": "is_family", "subject": "other", "value": "wandering_trader" },
@@ -96,7 +93,7 @@
                 "any_of": [
                   {"test": "is_family", "subject": "other", "value": "zombie"},
                   {"test": "is_family", "subject": "other", "value": "husk"},
-                  {"test": "is_family", "subject": "other", "value": "scp049"}
+                  {"test": "is_family", "subject": "other", "value": "drowned"}
                 ],
                 "all_of": [
                   {"test": "has_damage", "value": "fatal"}
@@ -112,7 +109,7 @@
 		    "max": 20
       },
       "minecraft:type_family": {
-        "family": [ "nurse", "human", "scpfoundation", "mob" ]
+        "family": [ "nurse", "human", "mob" ]
       },
       "minecraft:attack": {
         "damage": 1
@@ -194,19 +191,19 @@
               {
                 "weight": 400,
                 "add": {
-                  "component_groups": [ "minecraft:base_nurse1" ]
+                  "component_groups": [ "mod12:base_nurse1" ]
                 }
               },
               {
                 "weight": 400,
                 "add": {
-                  "component_groups": [ "minecraft:base_nurse2" ]
+                  "component_groups": [ "mod12:base_nurse2" ]
                 }
               },
               {
                 "weight": 400,
                 "add": {
-                  "component_groups": [ "minecraft:base_nurse3" ]
+                  "component_groups": [ "mod12:base_nurse3" ]
                 }
               }
             ]

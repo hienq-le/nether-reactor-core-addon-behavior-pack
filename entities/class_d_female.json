@@ -45,11 +45,8 @@
             {
               "filters": {
                 "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "scp" },
-                  { "test" :  "is_family", "subject" : "other", "value" :  "chaos" },
                   { "test" :  "is_family", "subject" : "other", "value" :  "monster" },
-                  { "test" :  "is_family", "subject" : "other", "value" :  "warden" },
-                  { "test" :  "is_family", "subject" : "other", "value" :  "herobrine" }
+                  { "test" :  "is_family", "subject" : "other", "value" :  "warden" }
                 ]
               },
               "max_dist": 20,
@@ -97,11 +94,8 @@
             {
               "filters": {
                 "any_of": [
-                  { "test" :  "is_family", "subject" : "other", "value" :  "scp" },
-                  { "test" :  "is_family", "subject" : "other", "value" :  "chaos" },
                   { "test" :  "is_family", "subject" : "other", "value" :  "monster" },
-                  { "test" :  "is_family", "subject" : "other", "value" :  "warden" },
-                  { "test" :  "is_family", "subject" : "other", "value" :  "herobrine" }
+                  { "test" :  "is_family", "subject" : "other", "value" :  "warden" }
                 ]
               },
               "max_dist": 42
@@ -149,19 +143,9 @@
         }
       },
 
-      "minecraft:base_classd1": {
+      "mod12:base_classd": {
         "minecraft:variant": {
           "value": 0
-        }
-      },
-      "minecraft:base_classd2": {
-        "minecraft:variant": {
-          "value": 1
-        }
-      },
-      "minecraft:base_classd3": {
-        "minecraft:variant": {
-          "value": 2
         }
       }
     },
@@ -221,7 +205,7 @@
                 "any_of": [
                   {"test": "is_family", "subject": "other", "value": "zombie"},
                   {"test": "is_family", "subject": "other", "value": "husk"},
-                  {"test": "is_family", "subject": "other", "value": "scp049"}
+                  {"test": "is_family", "subject": "other", "value": "drowned"}
                 ],
                 "all_of": [
                   {"test": "has_damage", "value": "fatal"}
@@ -298,21 +282,9 @@
           {
             "randomize": [
               {
-                "weight": 70,
+                "weight": 100,
                 "add": {
-                  "component_groups": [ "minecraft:base_classd1" ]
-                }
-              },
-              {
-                "weight": 70,
-                "add": {
-                  "component_groups": [ "minecraft:base_classd2" ]
-                }
-              },
-              {
-                "weight": 70,
-                "add": {
-                  "component_groups": [ "minecraft:base_classd3" ]
+                  "component_groups": [ "mod12:base_classd" ]
                 }
               }
             ]
