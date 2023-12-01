@@ -10,7 +10,7 @@
   "modules": [
     {
       "type": "data",
-      "name": "Nether Reactor Core Addon V2024.0 (Behavior Pack)"
+      "name": "Nether Reactor Core Addon V2024.0 (Behavior Pack)",
       "uuid": "f5c5fa7b-9ee3-445a-a2b4-f4fdafa9d68b",
       "version": [2024, 0, 0]
     }
