@@ -13,12 +13,12 @@
 			},
 			"classd_m": {
                 "minecraft:transformation": {
-                    "into": "minecraft:class_d<classd:with_eq>"
+                    "into": "mod12:class_d<classd:with_eq>"
                 }
             },
 			"classd_f": {
                 "minecraft:transformation": {
-                    "into": "minecraft:class_d_female<classd:with_eq>"
+                    "into": "mod12:class_d_female<classd:with_eq>"
                 }
             }
         },
