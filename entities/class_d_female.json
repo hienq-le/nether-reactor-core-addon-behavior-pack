@@ -375,33 +375,9 @@
           {
             "randomize": [
               {
-                "weight": 270,
+                "weight": 300,
                 "add": {
-                  "component_groups": [ "minecraft:base_classd1" ]
-                }
-              },
-              {
-                "weight": 270,
-                "add": {
-                  "component_groups": [ "minecraft:base_classd2" ]
-                }
-              },
-              {
-                "weight": 270,
-                "add": {
-                  "component_groups": [ "minecraft:base_classd3" ]
-                }
-              },
-              {
-                "weight": 270,
-                "add": {
-                  "component_groups": [ "minecraft:base_classd4" ]
-                }
-              },
-              {
-                "weight": 270,
-                "add": {
-                  "component_groups": [ "minecraft:base_classd5" ]
+                  "component_groups": [ "mod12:base_classd" ]
                 }
               }
             ]
