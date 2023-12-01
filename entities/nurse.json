@@ -109,7 +109,7 @@
 		    "max": 20
       },
       "minecraft:type_family": {
-        "family": [ "nurse", "human", "mob" ]
+        "family": [ "nurse", "human", "mob", "villager" ]
       },
       "minecraft:attack": {
         "damage": 1
@@ -129,10 +129,9 @@
           {
             "filters": {
               "any_of": [
-                { "test" :  "has_tag", "subject" : "other", "value" :  "scp"},
                 { "test" :  "is_family", "subject" : "other", "value" :  "monster"},
                 { "test" :  "is_family", "subject" : "other", "value" :  "d_class_melee"},
-                { "test" :  "is_family", "subject" : "other", "value" :  "scp"}
+                { "test" :  "is_family", "subject" : "other", "value" :  "warden"}
               ]
             },
             "max_dist": 8,

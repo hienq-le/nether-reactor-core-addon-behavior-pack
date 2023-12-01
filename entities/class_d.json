@@ -65,7 +65,7 @@
                   "test": "is_family",
                   "subject": "other",
                   "operator": "!=",
-                  "value": "d_class"
+                  "value": "villager"
                 }
               ]
             },
@@ -77,7 +77,7 @@
           "speed_multiplier": 0.8
         },
         "minecraft:type_family": {
-          "family": ["human", "scpfoundation", "mob", "villager", "class_d", "class_d_female"]
+          "family": ["human", "scpfoundation", "mob", "villager", "class_d"]
         },
         "minecraft:attack": {
           "damage": 1
@@ -163,7 +163,7 @@
         }
       },
       
-      "mod12:base_classd1: {
+      "mod12:base_classd": {
         "minecraft:variant": {
           "value": 0
         }
@@ -232,7 +232,7 @@
         ]
       },
       "minecraft:type_family": {
-          "family": ["human", "scpfoundation", "mob", "villager", "class_d", "class_d_female"]
+          "family": ["human", "scpfoundation", "mob", "villager", "class_d"]
       },
       "minecraft:behavior.equip_item": {
         "priority": 3
