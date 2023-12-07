@@ -115,6 +115,10 @@
         "track_target": true
       },
 
+      "minecraft:behavior.hurt_by_target": {
+        "priority": 4
+	},
+
       "minecraft:behavior.nearest_attackable_target": {
         "priority": 5,
         "must_see": true,
