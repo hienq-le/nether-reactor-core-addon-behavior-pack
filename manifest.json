@@ -2,17 +2,17 @@
   "format_version": 2,
   "header": {
     "description": "Add-on (BP) by §2Hien Q Le.\nAdd crafting recipes of Glowing Obsidian and Nether Reactor Core.\nAlso fix most of the Minecraft Bedrock 1.20.50+ unresolved bugs.\nIf you want to experience Minecraft 1.21 Update Features, please turn on the §eUpdate 1.21.",
-    "name": "Nether Reactor Core Addon V2024.0.1 (Behavior Pack)",
+    "name": "Nether Reactor Core Addon V2024.1 (Behavior Pack)",
     "uuid": "bb427af5-fefa-4dc6-99d2-9b6faf35c86f",
-    "version": [2024, 0, 1],
+    "version": [2024, 1, 0],
     "min_engine_version": [1, 20, 50]
   },
   "modules": [
     {
       "type": "data",
-      "name": "Nether Reactor Core Addon V2024.0.1 (Behavior Pack)",
+      "name": "Nether Reactor Core Addon V2024.1 (Behavior Pack)",
       "uuid": "f5c5fa7b-9ee3-445a-a2b4-f4fdafa9d68b",
-      "version": [2024, 0, 1]
+      "version": [2024, 1, 0]
     }
   ]
 }
